@@ -1,0 +1,106 @@
+#debug_cooki_table_container{
+	/*width: 50%;*/
+	margin: 12px;
+	/*border: 3px solid;*/
+}
+
+
+
+a.persona-button span.signin, a.github-button span.signin, a.persona-button span.signin:after, a.github-button span.signin:after {
+    background: linear-gradient(#56565a, #3a3a3a) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+a.persona-button span.signin:after, a.github-button span.signin:after {
+    z-index: 2;
+}
+a.persona-button span:after, a.github-button span:after {
+    border-radius: 0 3px 0 50px;
+    content: "";
+    height: 24px;
+    position: absolute;
+    right: -12px;
+    top: 0;
+    transform: scale(0.707) rotate(45deg);
+    width: 24px;
+    z-index: 1;
+}
+a.persona-button span.signin, a.github-button span.signin, a.persona-button span.signin:after, a.github-button span.signin:after {
+    background: linear-gradient(#56565a, #3a3a3a) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+a.persona-button span.signin, a.github-button span.signin {
+    line-height: 23px;
+    padding-bottom: 1px;
+    text-shadow: 0 1.5px 1px rgba(0, 0, 0, 0.35);
+}
+a.persona-button span, a.github-button span {
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 1rem;
+    line-height: 24px;
+    outline: 0 none;
+    padding: 0 10px 0 20px;
+    position: relative;
+    text-decoration: none;
+}
+
+
+
+
+a.persona-button span.persona-icon:after, a.github-button span.persona-icon:after, a.persona-button span.github-icon:after, a.github-button span.github-icon:after {
+    background: -webkit-linear-gradient(left top,#43a6e2,#287cc2);
+    background: -moz-linear-gradient(left top,#43a6e2,#287cc2);
+    background: -ms-linear-gradient(left top,#43a6e2,#287cc2);
+    background: linear-gradient(left top,#43a6e2,#287cc2);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#43a6e2',endColorstr='#287cc2',GradientType=1);
+}
+a.persona-button span:after, a.github-button span:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -12px;
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+    -webkit-transform: scale(.707) rotate(45deg);
+    -moz-transform: scale(.707) rotate(45deg);
+    -ms-transform: scale(.707) rotate(45deg);
+    transform: scale(.707) rotate(45deg);
+    border-radius: 0 3px 0 50px;
+}
+a.persona-button span.persona-icon {
+    background: linear-gradient(#43a6e2, #287cc2) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 3px 0 0 3px;
+    height: 24px;
+    padding-left: 3px;
+}
+a.persona-button span, a.github-button span {
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 1rem;
+    line-height: 24px;
+    outline: 0 none;
+    padding: 0 10px 0 20px;
+    position: relative;
+    text-decoration: none;
+}
+a.persona-button.persona-loaded {
+    visibility: visible;
+}
+a.persona-button span.persona-icon i{
+    position: relative;
+    top: 2px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+a.persona-button i{
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAABjElEQVR4Ae3WQYQbURjA8ccwhBCGYU+5LiGUEkoJPZUQQk5LWJawLMuSUyhLCTnlVIZSQk6llKGUEIZSQsg1hBCWZZnTEMK/KqqyMcn7Zubd9vddh7+5fN9TenC54wchOws86iid0fmoQJ+IQ3NqWQRKLIg3wEoXKBNy3Hes5AGXFaf1kgdG6KkkC7xii54gWeAL+l7LAxZP6OvJA1UkZvLADRJbbGmgh0xRFrBZIfNBFqgjtZQFOsjZksAlUqHsD1wiZD7LAooWEksK8lUxRF8l2bLTNUm6rsfoqUsC8oUdpDmZA06JKKcJ2PziuFbaV8UZc+J1s3gXObGJDkoSkB//tyheApwziD3/U67IJw04NBmy5rSAe95IAmW6jJF6ZEQT53ggT5816Ux4Hxdo8kA2fNzDwDs2ZOc3uf1AiZBsfdsP+GSv9j9QxYQZ1r/AT8xo7AJFTPF3gQ6mbHH+BgLMuVDkiDDHU1Qwaa64xqSN4hNGKXzTgQZtPuLhETB9Nmv0TA/mKx4et7T/AHu690RA5bMsAAAAAElFTkSuQmCC") no-repeat scroll 0 0 / cover  rgba(0, 0, 0, 0);
+    background-size: cover;
+}
+a.persona-button span.signin, a.github-button span.signin {
+    text-shadow: 0 1.5px 1px rgba(0,0,0,0.35);
+    line-height: 23px;
+    padding-bottom: 1px;
+}
