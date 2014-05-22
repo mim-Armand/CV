@@ -18,7 +18,7 @@ var signoutLink = document.getElementById('signout');
 if (signoutLink) {
     signoutLink.onclick = function() { navigator.id.logout(); };
 }
-
+var delet_me;
 navigator.id.watch({
     /*A string indicates that you believe the user is currently logged in to your site,
      and the value of the string is that user's case-sensitive email address.
@@ -26,16 +26,20 @@ navigator.id.watch({
      Omitting the value or setting it to undefined means you do not know if the user is logged in or not.*/
 //      loggedInUser: 'mim3dot@gmail.com',
     onlogin: function(assertion) {
-        console.log('onlogin: '+ assertion);
         // A user has logged in! Here you need to:
         // 1. Send the assertion to your backend for verification and to create a session.
         // 2. Update your UI.
+        delet_me = assertion;
         $.ajax({ // This example uses jQuery, but you can use whatever you'd like
             type: 'POST',
-            url: '/auth/login', // This is a URL on your website.
+            url: 'admin.php', // This is a URL on your website.
             data: {assertion: assertion},
-            success: function(res, status, xhr) { window.location.reload(); },
+            success: function(res, status, xhr) {
+//                window.location.reload();
+                console.log('Success!');
+            },
             error: function(xhr, status, err) {
+                console.log('ERR! '+err)
                 navigator.id.logout();
                 alert("Login failure: " + err);
             }
