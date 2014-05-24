@@ -41,7 +41,7 @@
 include ("debugger_sqlite3.php");
 //include ("debugger_filesystem.php");
 //include ("debugger_cookie.php");
-//include ("debugger_server_header.php");
+include ("debugger_server_header.php");
 ?>
 
 

@@ -44,3 +44,4 @@
 - [Basic PHP Sessions](http://php.about.com/od/advancedphp/ss/php_sessions.htm)
 - [If Modified Since Tool (TO IMPLEMENT!)](http://www.feedthebot.com/tools/if-modified/)
 - [Google webmaster guidelines](http://www.feedthebot.com/)
+- [CSS3 single element loaders](https://github.com/lukehaas/css-loaders)
