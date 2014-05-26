@@ -1,33 +1,13 @@
->## PHP APP SHELL!
-> PHP Single user, single page AJAX app shell (With Persona Auth integrated) (Back-end / front-end)
->
-> I made this for a project I'm working on and I thought it would be nice to share it so it maybe helpful to others.
-> Although it's completely functional and everything is massively tested (everything you expect from a shell) but I guess with no documentation, it is not so easy to employ it in a project (although certainly easier than re-doing everything), so I'll try to make a clear documentation to make it easier for ppl to re-use it in first chance, also I'll update the functionality and futures, so consider it version 0.01 ! but right now I don't have enough time, so accept my apology, m, ;)
-> - for session and NONCE managments I used another PHP library of mine: [mimses (minimal session and Nonce manager for PHP)](https://github.com/mim-Armand/mimses)
+>## mim CV cms
+> it is a minimal single page, AJAX based, flat-file CMS designed and developed by mim.Armand (Work in progress)
 
 
-
-
-
-
-==========
-#### TODO LIST:
-
-- [ ] add documentations
-   -  [ ] explain the variables and console debugging options
-- [ ] add more features
-- [ ] add some sample pages
-  -  [ ] Backend pages
-  -  [ ] Frontend pages
-- [ ] to buy lands in Paris (in Champs-Élysées) and start farming on them (parsley!)  :))) --- (when I got rich!)
-
-
-
-
-
-
-
-
+> - It is not ready yet!
+> - It is using and app shell created by me as well accessible from here: [PHP-AJAX-APP-SHELL](https://github.com/mim-Armand/PHP-AJAX-APP-SHELL)
+> - It is using [mimses](https://github.com/mim-Armand/mimses) for session and Nonce management.
+> - You can use this code for free fot personal or even for commercial uses (if under 20K profit! seriously if you earn more you should share it then! :))) )
+> - I'll update the code as it goes, so bare with me :)
+> - Please contact me and share your ideas and opinion with me (for example if you see a problem etc.)
 
 ===========
 ####IDEAS:
@@ -49,3 +29,12 @@
 - [The AJAX response: XML, HTML, or JSON?](http://www.quirksmode.org/blog/archives/2005/12/the_ajax_respon.html)
 - [ fido U2F ](http://fidoalliance.org/specs/fido-u2f-overview-v1.0-rd-20140209.pdf)
 - [U2F again!](https://sites.google.com/site/oauthgoog/gnubby)
+
+
+
+
+
+
+
+
+
