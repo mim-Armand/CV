@@ -23,19 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="admin.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin.php">
+      <file leaf-file-name="persona.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/persona.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="220" column="3" selection-start="9087" selection-end="9087" vertical-scroll-proportion="0.7454243" vertical-offset="3292" max-vertical-offset="3910">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="debugger.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/debug/debugger.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="2" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="918">
+            <state line="10" column="34" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1683">
               <folding />
             </state>
           </provider>
@@ -44,58 +35,28 @@
       <file leaf-file-name="mim.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mim.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="1" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
+            <state line="25" column="1" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1836">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testPersona.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/testPersona.php">
+      <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="22" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="952">
+            <state line="23" column="16" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.0" vertical-offset="538" max-vertical-offset="1139">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/debug/README.md">
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="72" selection-start="2435" selection-end="2435" vertical-scroll-proportion="-31.28" vertical-offset="0" max-vertical-offset="884">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="86" selection-end="86" vertical-scroll-proportion="-8.16" vertical-offset="0" max-vertical-offset="306">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mockup_01.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mockup_01.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="36" selection-start="2857" selection-end="2857" vertical-scroll-proportion="-8.038462" vertical-offset="743" max-vertical-offset="3536">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="debugger_filesystem.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/debug/debugger_filesystem.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="53" selection-start="518" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="2176">
+            <state line="51" column="0" selection-start="1798" selection-end="1798" vertical-scroll-proportion="0.9409722" vertical-offset="325" max-vertical-offset="969">
               <folding />
             </state>
           </provider>
@@ -127,12 +88,20 @@
         <option value="$PROJECT_DIR$/test2/index.php" />
         <option value="$PROJECT_DIR$/test/testPersona.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/debug/debugger.php" />
         <option value="$PROJECT_DIR$/debug/README.md" />
         <option value="$PROJECT_DIR$/mim.php" />
+        <option value="$PROJECT_DIR$/mimses/README.md" />
+        <option value="$PROJECT_DIR$/mimses/test.php" />
+        <option value="$PROJECT_DIR$/mockup_loader.html" />
+        <option value="$PROJECT_DIR$/css/mim.css" />
+        <option value="$PROJECT_DIR$/mimses.php" />
+        <option value="$PROJECT_DIR$/views.php" />
+        <option value="$PROJECT_DIR$/debug.php" />
         <option value="$PROJECT_DIR$/mim.js" />
+        <option value="$PROJECT_DIR$/persona.php" />
         <option value="$PROJECT_DIR$/admin.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -197,35 +166,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cv_cms_01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cv_cms_01" />
+              <option name="myItemId" value="docs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cv_cms_01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cv_cms_01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="debug" />
+              <option name="myItemId" value="psd" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -403,58 +348,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/debug/debugger.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="8" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="867">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debug/debugger_persona.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debug/debugger.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="2669" selection-end="2729" vertical-scroll-proportion="0.0" vertical-offset="1204" max-vertical-offset="1887">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debug/debugger_auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="357">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debug/debugger_filesystem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="12" selection-start="6890" selection-end="6890" vertical-scroll-proportion="0.0" vertical-offset="1561" max-vertical-offset="2176">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debug/debugger_server_header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="249" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="374">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="7" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/persona.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="7" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="952">
           <folding />
         </state>
       </provider>
@@ -466,65 +362,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/persona-buttons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="11" selection-start="460" selection-end="460" vertical-scroll-proportion="0.44155845" vertical-offset="0" max-vertical-offset="3978" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/persona.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="7" selection-start="557" selection-end="557" vertical-scroll-proportion="0.02529511" vertical-offset="359" max-vertical-offset="952">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debug/debugger_cookie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="179" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1309" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debug/debugger.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="2669" selection-end="2729" vertical-scroll-proportion="0.4278607" vertical-offset="1204" max-vertical-offset="1887">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debug/debugger_persona.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debug/debugger_sqlite3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="7" selection-start="154" selection-end="203" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test2/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="29" selection-start="1070" selection-end="1105" vertical-scroll-proportion="0.27687296" vertical-offset="408" max-vertical-offset="1139">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test2/verify.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="72" selection-start="198" selection-end="198" vertical-scroll-proportion="0.13843648" vertical-offset="0" max-vertical-offset="614">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/persona.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="55" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.8903437" vertical-offset="0" max-vertical-offset="935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="611">
@@ -532,23 +369,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/debug/debugger_server_header.php">
+    <entry file="file://$PROJECT_DIR$/isajax.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="193" selection-end="193" vertical-scroll-proportion="0.14214046" vertical-offset="0" max-vertical-offset="598">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="614">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mockup_01.html">
+    <entry file="file://$PROJECT_DIR$/mockup_loader.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="36" selection-start="2857" selection-end="2857" vertical-scroll-proportion="-8.038462" vertical-offset="743" max-vertical-offset="3536">
+        <state line="0" column="42" selection-start="42" selection-end="42" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="136">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/debug/debugger_auth.php">
+    <entry file="file://$PROJECT_DIR$/css/mim.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="246" selection-end="246" vertical-scroll-proportion="0.14214046" vertical-offset="0" max-vertical-offset="598">
+        <state line="34" column="11" selection-start="828" selection-end="828" vertical-scroll-proportion="0.9413681" vertical-offset="0" max-vertical-offset="1088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mimses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="22" selection-start="593" selection-end="593" vertical-scroll-proportion="0.36772045" vertical-offset="17" max-vertical-offset="867">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debug.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="2" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="2" selection-start="2463" selection-end="2523" vertical-scroll-proportion="0.69543976" vertical-offset="542" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mim.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="1" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persona.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="34" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1683">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="16" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.0" vertical-offset="538" max-vertical-offset="1139">
           <folding />
         </state>
       </provider>
@@ -558,52 +437,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="86" selection-end="86" vertical-scroll-proportion="-8.16" vertical-offset="0" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debug/debugger_filesystem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="53" selection-start="518" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="2176">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/testPersona.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="22" selection-start="1199" selection-end="1199" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="952">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debug/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="72" selection-start="2435" selection-end="2435" vertical-scroll-proportion="-31.28" vertical-offset="0" max-vertical-offset="884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/debug/debugger.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="2" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="918">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="220" column="3" selection-start="9087" selection-end="9087" vertical-scroll-proportion="0.7454243" vertical-offset="3292" max-vertical-offset="3910">
+        <state line="51" column="0" selection-start="1798" selection-end="1798" vertical-scroll-proportion="0.9409722" vertical-offset="325" max-vertical-offset="969">
           <folding />
         </state>
       </provider>
