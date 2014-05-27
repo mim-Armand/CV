@@ -58,7 +58,6 @@ $loader = <<<'MIM'
 MIM;
 $login = <<<'MIM'
 <div id="page_loader_mask"><div class="loader">Loading...</div></div>
-<p><a id="signout" href="javascript:navigator.id.logout()">Logout</a></p>
 
   <div class="container"><br>
     <div id="jumbotron">
@@ -115,5 +114,8 @@ $footer = <<<MIM
   <script src="mim.js"></script>
 </body>
 </html>
+MIM;
+$view_admin_page = <<<'MIM'
+ <p><a id="signout" href="javascript:killUser()">Logout</a></p>
 MIM;
 ?>

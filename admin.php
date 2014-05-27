@@ -23,17 +23,18 @@ include_once ("persona.php");
 include_once ("isajax.php");
 include_once ("views.php");
 //include_once ("debug.php");
+// this is the array var that will carry everything that needs to be sent back to client
 $jsonArray = [];
 if (!$isAjax) {
     echo $header . $login . $footer;
 } else {
      isset($_POST['act']) ? $act = $_POST['act'] : $act = NULL;
-     $jsonArray['action requested:'] = $act;
-     $jsonArray['Received:'] = $_POST;
+     $jsonArray['Client:'] = $_POST;
     if ($isTokenOk) {
         checkPersona();
         if ($isUserLogedIn) {
-            // $jsonArray['act'] = ;
+            $jsonArray['snip'] = $view_admin_page;
+            $commandToClient = 'BuildEditPage';
             jsonAnswer();
         } else {
             jsonAnswer();

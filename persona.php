@@ -8,6 +8,8 @@ function checkPersona() {
     global $commandToClient;
     $isUserLogedIn = false;
     if($act =='killUser'){
+        $isUserLogedIn = false;
+        $beingParanoid = true;
         session_destroy();
         setcookie('mimses', "", time() - 3600);
         $commandToClient = 'refresh';
@@ -27,7 +29,7 @@ function checkPersona() {
                 
                 // if the result of Persona Auth is successful
                 if ($result->email === $adminEmail) {
-                    
+
                     // and if the e-mail being authenticated is exactly the same as was provided (ad admin), then ... well! everything is set so we gain the user access to admin page
                     $isUserLogedIn = true;
                     $_SESSION['userLoggedIn'] = true;
@@ -46,6 +48,7 @@ function checkPersona() {
         } else {
             // Auth request with no assertion will result in logging out and destroying the session
             $isUserLogedIn = false;
+            $_SESSION['userLoggedIn'] = false;
         } 
     }
 }

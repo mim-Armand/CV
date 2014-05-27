@@ -13,12 +13,12 @@ function ajaxCaller(d) {
             act: act
         },
         success: function(res, status, xhr) {
-            console.log('status:' + status);
             console.log('res: ' + res);
             receivedAjax = jQuery.parseJSON(res);
             console.log('receivedAjax: ' + receivedAjax);
             tok = receivedAjax.tok;
             isLogedIn = receivedAjax.logedIn;
+            cmd = receivedAjax.cmd;
         },
         error: function(xhr, status, err) {
             console.log('ERR! ' + err)
@@ -28,37 +28,54 @@ function ajaxCaller(d) {
         beforeSend: function() {
             duringAjax(act);
             //TODO: use this to make a little LED light that let the users know when AJAX is in action!
-            console.log('AJAX call STARTED!');
+            // console.log('AJAX call STARTED!');
         },
         complete: function() {
             afterAjax(act);
             //TODO: use this to make a little LED light that let the users know when AJAX is in action!
-            console.log('AJAX call FINISHED!');
+            // console.log('AJAX call FINISHED!');
         },
         statusCode: {
             404: function() {
                 console.log("page not found");
             },
             200: function() {
-                console.log('status 200 !!!');
+                // console.log('status 200 !!!');
             }
         }
     })
 }
-function duringAjax(act){
-    if (act == 'auth' || act == 'killUser'){
-//        $("#page_loader_mask").fadeIn();
+
+function duringAjax(act) {
+    if (act == 'killUser') {
+        navigator.id.logout();
+        //        $("#page_loader_mask").fadeIn();
     }
 }
-function afterAjax(act){
-    if (act == 'auth' && isLogedIn == true){
+
+function afterAjax(act) {
+    if (act == 'auth' && isLogedIn == true) {
         // isLogedIn ? : $("#page_loader_mask").fadeOut();
+    }
+    //the comand received from the server: 
+    switch (cmd) {
+        case 'refresh':
+            // true is to force the reload to not use the cache:
+            location.reload(true);
+            break;
+        case 'BuildEditPage':
+            console.log('EDIT PAGE NEEDS TO BE BUILD!!! ====================================+');
+            $( ".container" ).replaceWith(receivedAjax.snip);
+        break;
+        default:
+            console.log('--------------- > CMD not recognised! < ---------------');
     }
 }
 var receivedAjax;
 var ass;
 var act;
 var isLogedIn;
+var cmd;
 // ================================================= PERSONA RELATED SH**! :P
 var signinLink = document.getElementById('signin');
 if (signinLink) {
@@ -76,10 +93,17 @@ if (signinLink) {
 var signoutLink = document.getElementById('signout');
 if (signoutLink) {
     signoutLink.onclick = function() {
+        navigator.id.logout();
         act = 'killUser';
         ass = null;
-        navigator.id.logout();
+        ajaxCaller();
     };
+}
+function killUser(){
+    navigator.id.logout();
+    act = 'killUser';
+    ass = null;
+    ajaxCaller();
 }
 navigator.id.watch({
     onlogin: function(assertion) {
@@ -89,6 +113,7 @@ navigator.id.watch({
     },
     onlogout: function() {
         act = 'auth';
+        ass = null;
         //TODO: kill the session on server and destroy the UI (refresh the page on ajax success)!
         ajaxCaller();
     }
