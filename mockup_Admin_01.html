@@ -1,203 +1,179 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Backend Mockup</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/amelia/bootstrap.min.css">-->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-<body>
-
-<div class="container">
-
-
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <span class="navbar-brand" href="#">Hi <strong>user</strong>, welcome to mim CV!</span>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Edit your CV content!</a></li>
-                    <li><a href="#">Edit skins!</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings... <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" onclick="logout()">Log out</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <span class="fa fa-question-circle"></span>  <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li role="presentation" class="dropdown-header">Usefull stuff!</li>
-                            <li><a href="#">Help</a></li>
-                            <li><a href="#">About CV!</a></li>
-                            <li><a href="#">Project website</a></li>
-                            <li><a href="#"><span style="color: red;" class="fa fa-git-square"></span> Project repository</a></li>
-                            <li class="divider"></li>
-                            <li role="presentation" class="dropdown-header">CV! Creators</li>
-                            <li><a href="#">3Dot's Art group</a></li>
-                            <li><a href="#">mim.Armand</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-
-
-    <div class="jumbotron">
-        <div class="btn-group btn-group-justified">
-            <div class="btn-group">
-                <button title="photo + info" type="button" class="btn btn-default active"><span class="fa fa-pencil-square-o fa-2x text-muted"></span></button>
-            </div>
-            <div class="btn-group">
-                <button title="education" type="button" class="btn btn-default"><span class="fa fa-graduation-cap fa-2x text-muted"></span></button>
-            </div>
-            <div class="btn-group">
-                <button title="languages" type="button" class="btn btn-default"><span class="fa fa-language fa-2x text-muted"></span></button>
-            </div>
-            <div class="btn-group">
-                <button title="qualifications (skills) + awards and nominations" type="button" class="btn btn-default"><span class="fa fa-trophy fa-2x text-muted"></span></button>
-            </div>
-            <div class="btn-group">
-                <button title="experiences (jobs)" type="button" class="btn btn-default"><span class="fa fa-briefcase fa-2x text-muted"></span></button>
-            </div>
-            <div class="btn-group">
-                <button title="interests" type="button" class="btn btn-default"><span class="fa fa-heart fa-2x text-muted"></span></button>
-            </div>
-            <div class="btn-group">
-                <button title="More" type="button" class="btn btn-default"><span class="fa fa-plus-square fa-2x text-muted"></span></button>
-            </div>
-        </div></div>
-
-    <div class="jumbotron">
-
-
-
-
-        <div class="panel panel-default">
-            <div class="panel-heading">Your CV Photos: <span class="badge">2</span>
-                <a href="#" class="pull-right">Need help on this <i class="fa fa-question-circle"></i></a>
-            </div>
-            <div class="panel-body">
-
-                <div class="row">
-
-                    <div class="col-sm-5 col-md-3">
-                        <div class="thumbnail">
-                            <a href="#"><img data-src="holder.js/100%x180" alt="..."></a>
-                            <div class="caption">
-                                <span class="text-muted">mim.Armand in Paris! -2013-</span>
-                            </div>
-
-                            <div class="btn-group btn-group-justified" style="margin-top: 6px">
-                                <div class="btn-group">
-                                    <button class="btn btn-default btn-xs"><i class="fa fa-pencil fa-lg"></i></button>
-                                </div>
-                                <div class="btn-group">
-                                    <button class="btn btn-danger btn-xs"><i class="fa fa-eraser fa-lg"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-5 col-md-3">
-                        <div class="thumbnail">
-                            <a href="#"><img data-src="holder.js/100%x180" alt="..."></a>
-                            <div class="caption">
-                                <span class="text-muted">Me in Toulouse!</span>
-                            </div>
-
-                            <div class="btn-group btn-group-justified" style="margin-top: 6px">
-                                <div class="btn-group">
-                                    <button class="btn btn-default btn-xs"><i class="fa fa-pencil fa-lg"></i></button>
-                                </div>
-                                <div class="btn-group">
-                                    <button class="btn btn-danger btn-xs"><i class="fa fa-eraser fa-lg"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-5 col-md-3">
-                        <button style="height: 180px" title="Add More Pictures" class="btn btn-block btn-info">
-                            <i class="fa fa-plus-square fa-5x"></i>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Backend Mockup</title>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/amelia/bootstrap.min.css">-->
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
                         </button>
+                        <span class="navbar-brand" href="#">Hi <strong>user</strong>, welcome to mim CV!</span>
                     </div>
-                </div>
-            </div>
-            <!--<div class="panel-footer"></div>-->
-        </div>
-
-
-
-        <div class="panel panel-default">
-            <div class="panel-heading">Your Info: <span class="badge">2</span></div>
-            <div class="panel-body">
-
-                <div class="list-group">
-                    <div class="list-group-item">
-                        <h4 class="list-group-item-heading label label-default">Your Address:</h4>
-                        <h6 class="list-group-item-text">40 Rue Durantin, Bat-F, Paris 75018, France</h6>
-                        <div class="btn-group pull-right" style="position:absolute; top:6px; right:6px;">
-                            <button class="btn btn-default"><i class="fa fa-pencil"></i></button>
-                            <button class="btn btn-danger"><i class="fa fa-eraser"></i></button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Edit your CV content!</a></li>
+                            <li><a href="#">Edit skins!</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings... <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#" onclick="logout()">Log out</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="fa fa-question-circle"></span>  <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li role="presentation" class="dropdown-header">Usefull stuff!</li>
+                                    <li><a href="#">Help</a></li>
+                                    <li><a href="#">About CV!</a></li>
+                                    <li><a href="#">Project website</a></li>
+                                    <li><a href="#"><span style="color: red;" class="fa fa-git-square"></span> Project repository</a></li>
+                                    <li class="divider"></li>
+                                    <li role="presentation" class="dropdown-header">CV! Creators</li>
+                                    <li><a href="#">3Dot's Art group</a></li>
+                                    <li><a href="#">mim.Armand</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+                    <div class="jumbotron">
+                        <div class="btn-group btn-group-justified">
+                            <div class="btn-group">
+                                <button title="photo + info" type="button" class="btn btn-default active"><span class="fa fa-pencil-square-o fa-2x text-muted"></span></button>
+                            </div>
+                            <div class="btn-group">
+                                <button title="education" type="button" class="btn btn-default"><span class="fa fa-graduation-cap fa-2x text-muted"></span></button>
+                            </div>
+                            <div class="btn-group">
+                                <button title="languages" type="button" class="btn btn-default"><span class="fa fa-language fa-2x text-muted"></span></button>
+                            </div>
+                            <div class="btn-group">
+                                <button title="qualifications (skills) + awards and nominations" type="button" class="btn btn-default"><span class="fa fa-trophy fa-2x text-muted"></span></button>
+                            </div>
+                            <div class="btn-group">
+                                <button title="experiences (jobs)" type="button" class="btn btn-default"><span class="fa fa-briefcase fa-2x text-muted"></span></button>
+                            </div>
+                            <div class="btn-group">
+                                <button title="interests" type="button" class="btn btn-default"><span class="fa fa-heart fa-2x text-muted"></span></button>
+                            </div>
+                            <div class="btn-group">
+                                <button title="More" type="button" class="btn btn-default"><span class="fa fa-plus-square fa-2x text-muted"></span></button>
+                            </div>
+                        </div></div>
+                        <div class="jumbotron">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Your CV Photos: <span class="badge">2</span>
+                                    <a href="#" class="pull-right">Need help on this <i class="fa fa-question-circle"></i></a>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-sm-5 col-md-3">
+                                            <div class="thumbnail">
+                                                <a href="#"><img data-src="holder.js/100%x180" alt="..."></a>
+                                                <div class="caption">
+                                                    <span class="text-muted">mim.Armand in Paris! -2013-</span>
+                                                </div>
+                                                <div class="btn-group btn-group-justified" style="margin-top: 6px">
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-default btn-xs"><i class="fa fa-pencil fa-lg"></i></button>
+                                                    </div>
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-danger btn-xs"><i class="fa fa-eraser fa-lg"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 col-md-3">
+                                            <div class="thumbnail">
+                                                <a href="#"><img data-src="holder.js/100%x180" alt="..."></a>
+                                                <div class="caption">
+                                                    <span class="text-muted">Me in Toulouse!</span>
+                                                </div>
+                                                <div class="btn-group btn-group-justified" style="margin-top: 6px">
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-default btn-xs"><i class="fa fa-pencil fa-lg"></i></button>
+                                                    </div>
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-danger btn-xs"><i class="fa fa-eraser fa-lg"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 col-md-3">
+                                            <button style="height: 180px" title="Add More Pictures" class="btn btn-block btn-info">
+                                            <i class="fa fa-plus-square fa-5x"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="panel-footer"></div>-->
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Your Info: <span class="badge">2</span></div>
+                                <div class="panel-body">
+                                    <div class="list-group">
+                                        <div class="list-group-item">
+                                            <h4 class="list-group-item-heading label label-default">Your Address:</h4>
+                                            <h6 class="list-group-item-text">40 Rue Durantin, Bat-F, Paris 75018, France</h6>
+                                            <div class="btn-group pull-right" style="position:absolute; top:6px; right:6px;">
+                                                <button class="btn btn-default"><i class="fa fa-pencil"></i></button>
+                                                <button class="btn btn-danger"><i class="fa fa-eraser"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <h4 class="list-group-item-heading label label-default">Your Phone Number:</h4>
+                                            <h6 class="list-group-item-text">0778392964</h6>
+                                            <div class="btn-group pull-right" style="position:absolute; top:6px; right:6px;">
+                                                <button class="btn btn-default"><i class="fa fa-pencil"></i></button>
+                                                <button class="btn btn-danger"><i class="fa fa-eraser"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <button title="Add more items" type="button" class="btn btn-info btn-block"><i class="fa fa-plus-square fa-2x"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer"><a href="#">Need help <i class="fa fa-question-circle"></i></a></div>
+                            </div>
+                            test
                         </div>
                     </div>
-                    <div class="list-group-item">
-                        <h4 class="list-group-item-heading label label-default">Your Phone Number:</h4>
-                        <h6 class="list-group-item-text">0778392964</h6>
-                        <div class="btn-group pull-right" style="position:absolute; top:6px; right:6px;">
-                            <button class="btn btn-default"><i class="fa fa-pencil"></i></button>
-                            <button class="btn btn-danger"><i class="fa fa-eraser"></i></button>
-                        </div>
-                    </div>
-                    <div class="list-group-item">
-                        <button title="Add more items" type="button" class="btn btn-info btn-block"><i class="fa fa-plus-square fa-2x"></i></button>
-                    </div>
-                </div>
-
-            </div>
-            <div class="panel-footer"><a href="#">Need help <i class="fa fa-question-circle"></i></a></div>
-        </div>
-test
-    </div>
-</div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.3.1/holder.min.js"></script>
-</body>
-</html>
+                    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+                    <!-- Include all compiled plugins (below), or include individual files as needed -->
+                    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+                    <script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.3.1/holder.min.js"></script>
+                </body>
+            </html>

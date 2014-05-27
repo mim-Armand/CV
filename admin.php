@@ -15,9 +15,11 @@ $beingParanoid = false;
 //TODO: keep email adress in BCRYPTED format only 
 $adminEmail = 'mim3dot@gmail.com';
 $admin_page_address = findAdminPageAddress();
-// this variable will keep the AJAX requested action name;
-$act = '';
-include_once ("persona.php");
+// this variable will keep the AJAX requested action name (sent by client);
+$act = NULL;
+// this var will keep the command we want to send to client
+$commandToClient = NULL;
+include_once ("persona.php"); 
 include_once ("isajax.php");
 include_once ("views.php");
 //include_once ("debug.php");
@@ -25,15 +27,15 @@ $jsonArray = [];
 if (!$isAjax) {
     echo $header . $login . $footer;
 } else {
-     isset($_POST['dataArray']['act']) ? $act = $_POST['dataArray']['act'] : $act = NULL;
+     isset($_POST['act']) ? $act = $_POST['act'] : $act = NULL;
      $jsonArray['action requested:'] = $act;
+     $jsonArray['Received:'] = $_POST;
     if ($isTokenOk) {
         checkPersona();
         if ($isUserLogedIn) {
-            $jsonArray['LOGED IN'] = 'YES!';
+            // $jsonArray['act'] = ;
             jsonAnswer();
         } else {
-            $jsonArray['LOGED IN'] = 'NO!';
             jsonAnswer();
         }
     } else {
@@ -47,9 +49,11 @@ function jsonAnswer() {
     global $isTokenOk;
     global $isUserLogedIn;
     global $tok;
-    $jsonArray['authStatus'] = $isUserLogedIn;
+    global $commandToClient;
+    $jsonArray['logedIn'] = $isUserLogedIn;
     $jsonArray['tokenStatus'] = $isTokenOk;
     $jsonArray['tok'] = $tok;
+    $jsonArray['cmd'] = $commandToClient;
     echo json_encode($jsonArray);
 }
 function findAdminPageAddress() {

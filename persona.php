@@ -1,19 +1,24 @@
 <?php
-$isUserLogedIn = false;
-
 function checkPersona() {
     global $adminEmail;
     global $isUserLogedIn;
     global $beingParanoid;
     global $jsonArray;
     global $act;
+    global $commandToClient;
+    $isUserLogedIn = false;
+    if($act =='killUser'){
+        session_destroy();
+        setcookie('mimses', "", time() - 3600);
+        $commandToClient = 'refresh';
+    }
     $isUserLogedIn = false;
     if (!$beingParanoid && $act!=='auth' && isset($_SESSION['userLoggedIn']) && $_SESSION['userLoggedIn']) {
         $isUserLogedIn = true;
-        $jsonArray['PARANOID!'] = 'NO!';
+        $jsonArray['PARANOID'] = false;
     } else {
-        $jsonArray['PARANOID!'] = 'YES!';
-        if (isset($_POST['assertion'])) {
+        $jsonArray['PARANOID'] = true;
+        if (isset($_POST['assertion']) && !empty($_POST['assertion'])) {
             
             // if asserstion value exist in the received package then it is an auth request (or combined):
             $persona = new Persona();
@@ -32,32 +37,16 @@ function checkPersona() {
                     //TODO: should it die here ???!
                     // otherwise, it means that sombody else (or user her/himself) is trying to login with a different e-mail, which we won't let them to! (here we should tell them that you can login JUST and Just using the admin email)
                     //TODO: let the user know that s/he needs to login with his admin email
-                    
-                    
                 }
             } else {
                 $isUserLogedIn = false;
-                
-                // echo $result->reason;
-                
+                $jsonArray['WHY PERSONA?!'] = $result->reason;
                 // in case of getting an error from Persona, we through out propper info to user here:
-                $body = "<p>Error: " . $result->reason . "</p>";
             }
-        } elseif (!empty($_GET['logout'])) {
-            $isUserLogedIn = false;
-            
-            // logout
-            $body = "<p>You have logged out.</p>";
         } else {
+            // Auth request with no assertion will result in logging out and destroying the session
             $isUserLogedIn = false;
-            
-            // here we show login page and options to user:
-            $body = "<p><a class=\"persona-button\" href=\"javascript:navigator.id.request()\"><span>Login with Persona</span></a></p>";
-        }
-        
-        //    echo $isUserLogedIn ? 'true' : 'false';
-        
-        
+        } 
     }
 }
 

@@ -1,31 +1,64 @@
-console.log('tok: '+tok);
+console.log('tok: ' + tok);
+
 function ajaxCaller(d) {
-    console.log('tok: '+tok)
+    console.log('tok: ' + tok)
     $.ajax({
+        // dataType: 'json',
         type: 'POST',
         url: admin_page_address,
         data: {
             dataArray: d,
-                tok: tok,
-            assertion: ass
+            tok: tok,
+            assertion: ass,
+            act: act
         },
         success: function(res, status, xhr) {
             console.log('status:' + status);
-            console.log('res: '+res);
-            console.log('xhr: '+xhr);
+            console.log('res: ' + res);
             receivedAjax = jQuery.parseJSON(res);
-            console.log('receivedAjax: '+receivedAjax);
+            console.log('receivedAjax: ' + receivedAjax);
             tok = receivedAjax.tok;
+            isLogedIn = receivedAjax.logedIn;
         },
         error: function(xhr, status, err) {
             console.log('ERR! ' + err)
             navigator.id.logout();
             alert("Login failure: " + err);
+        },
+        beforeSend: function() {
+            duringAjax(act);
+            //TODO: use this to make a little LED light that let the users know when AJAX is in action!
+            console.log('AJAX call STARTED!');
+        },
+        complete: function() {
+            afterAjax(act);
+            //TODO: use this to make a little LED light that let the users know when AJAX is in action!
+            console.log('AJAX call FINISHED!');
+        },
+        statusCode: {
+            404: function() {
+                console.log("page not found");
+            },
+            200: function() {
+                console.log('status 200 !!!');
+            }
         }
     })
 }
+function duringAjax(act){
+    if (act == 'auth' || act == 'killUser'){
+//        $("#page_loader_mask").fadeIn();
+    }
+}
+function afterAjax(act){
+    if (act == 'auth' && isLogedIn == true){
+        // isLogedIn ? : $("#page_loader_mask").fadeOut();
+    }
+}
 var receivedAjax;
 var ass;
+var act;
+var isLogedIn;
 // ================================================= PERSONA RELATED SH**! :P
 var signinLink = document.getElementById('signin');
 if (signinLink) {
@@ -43,61 +76,20 @@ if (signinLink) {
 var signoutLink = document.getElementById('signout');
 if (signoutLink) {
     signoutLink.onclick = function() {
+        act = 'killUser';
+        ass = null;
         navigator.id.logout();
     };
 }
 navigator.id.watch({
-    /*A string indicates that you believe the user is currently logged in to your site,
-     and the value of the string is that user's case-sensitive email address.
-     A literal null indicates that you do not believe the user is logged in.
-     Omitting the value or setting it to undefined means you do not know if the user is logged in or not.*/
-    // loggedInUser: 'mim3dot@gmail.com',
     onlogin: function(assertion) {
+        act = 'auth';
         ass = assertion;
-        var dataArray = {
-            'act': 'auth'
-        };
-        ajaxCaller(dataArray);
-        // A user has logged in! Here you need to:
-        // 2. Update your UI.
-        //        $.ajax({ // Sending the assertion to your backend for verification and to create a session
-        //            type: 'POST',
-        //            url: admin_page_address, // this variable is set on back-end (admin_page_address)
-        //            data: {
-        //                assertion: assertion,
-        //                tok: tok // set on back-end
-        //            },
-        //            success: function(res, status, xhr) {
-        //                // window.location.reload();
-        //                //                console.log('Success!');
-        //                console.log("res: " + res + " --- status: " + status + " --- xhr: " + xhr);
-        //                // tok = res.tok;
-        //                console.log("res: " + res);
-        //            },
-        //            error: function(xhr, status, err) {
-        //                console.log('ERR! ' + err)
-        //                navigator.id.logout();
-        //                alert("Login failure: " + err);
-        //            }
-        //        });
+        ajaxCaller();
     },
     onlogout: function() {
-        //        console.log('onlogOUT: ' + assertion);
-        // A user has logged out! Here you need to:
-        // Tear down the user's session by redirecting the user or making a call to your backend.
-        var dataArray = {
-            'act': 'auth'
-        };
-        ajaxCaller(dataArray);
-        // $.ajax({
-        //     type: 'POST',
-        //     url: admin_page_address, // This is a URL on your website.
-        //     success: function(res, status, xhr) {
-        //         //                window.location.reload();
-        //     },
-        //     error: function(xhr, status, err) {
-        //         alert("Logout failure: " + err);
-        //     }
-        // });
+        act = 'auth';
+        //TODO: kill the session on server and destroy the UI (refresh the page on ajax success)!
+        ajaxCaller();
     }
 });

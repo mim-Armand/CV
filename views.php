@@ -1,13 +1,68 @@
 <?php
 /********************************************************** VIEWS ********************************************************/
+$view_menu_top = <<<'MIM'
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <span class="navbar-brand" href="#">Hi <strong>user</strong>, welcome to mim CV!</span>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Edit your CV content!</a></li>
+                            <li><a href="#">Edit skins!</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings... <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#" onclick="logout()">Log out</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="fa fa-question-circle"></span>  <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li role="presentation" class="dropdown-header">Usefull stuff!</li>
+                                    <li><a href="#">Help</a></li>
+                                    <li><a href="#">About CV!</a></li>
+                                    <li><a href="#">Project website</a></li>
+                                    <li><a href="#"><span style="color: red;" class="fa fa-git-square"></span> Project repository</a></li>
+                                    <li class="divider"></li>
+                                    <li role="presentation" class="dropdown-header">CV! Creators</li>
+                                    <li><a href="#">3Dot's Art group</a></li>
+                                    <li><a href="#">mim.Armand</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+MIM;
 $loader = <<<'MIM'
-<div class="loader">Loading...</div>
+<div id="page_loader_mask" class="loader">Loading...</div>
 MIM;
 $login = <<<'MIM'
+<div id="page_loader_mask"><div class="loader">Loading...</div></div>
 <p><a id="signout" href="javascript:navigator.id.logout()">Logout</a></p>
 
   <div class="container"><br>
-    <div class="jumbotron">
+    <div id="jumbotron">
+    <div id="login_form">
       <div class="alert alert-warning alert-dismissable">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
         <strong>Hi there!</strong><br> You need to log-in to be able to edit your CV!<br>
@@ -24,6 +79,7 @@ $login = <<<'MIM'
         <div class="panel-footer text-muted"><small>mim CV uses best <a href="#">security practices</a> to protect you!</small>
           <a href="#" class="pull-right">More info <i class="fa fa-question-circle"></i></a>
         </div>
+      </div>
       </div>
     </div>
   </div>
