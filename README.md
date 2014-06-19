@@ -34,6 +34,8 @@
 ==========
 #### TODOs:
 - [ ] complet this todo list! :/
+- [x] Auth Modules
+- [ ] SQLite modules
 
 
 
