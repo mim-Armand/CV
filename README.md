@@ -35,6 +35,7 @@
 #### TODOs:
 - [ ] complet this todo list! :/
 - [x] Auth Modules
+  -[x] Persona
 - [ ] SQLite modules
 
 
