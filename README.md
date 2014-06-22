@@ -36,6 +36,7 @@
 - [ ] complet this todo list! :/
 - [x] Auth Modules
   - [x] Persona
+  - [x] Session manager module
 - [ ] SQLite modules
 
 
