@@ -17,6 +17,7 @@
 ============
 - Tools that can be handy:
 
+- [Whoops!](https://github.com/filp/whoops)
 - [XSLt](http://www.php.net/manual/en/book.xsl.php)
 - [maybe?! Phery.js](http://phery-php-ajax.net/)
 - [or maybe ther PHP Ajax frameworks?](http://ajaxpatterns.org/PHP_Ajax_Frameworks)
