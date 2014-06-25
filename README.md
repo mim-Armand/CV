@@ -39,6 +39,7 @@
   - [x] Persona
   - [x] Session manager module
 - [ ] SQLite modules
+- [x] AJAX implementation
 
 
 
